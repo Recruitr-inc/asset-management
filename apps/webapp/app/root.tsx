@@ -75,7 +75,7 @@ export const links: LinksFunction = () => [
 
 export const meta: MetaFunction = () => [
   {
-    title: "shelf.nu",
+    title: "Recruitr™ Asset Management",
   },
 ];
 
@@ -225,7 +225,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <div id={UNSUPPORTED_BROWSER_SCREEN_ID}>
           <BlockInteractions
             title="Your browser is out of date"
-            content="Shelf needs a current browser. Please update your browser, or switch to the latest Chrome, Firefox, Edge or Safari."
+            content="Recruitr needs a current browser. Please update your browser, or switch to the latest Chrome, Firefox, Edge or Safari."
             icon="x"
           />
         </div>
@@ -276,10 +276,10 @@ function App() {
     <BlockInteractions
       title={"Maintenance is being performed"}
       content={
-        "Apologies, we’re down for scheduled maintenance. Please try again later."
+        "Apologies, Recruitr Asset Management is temporarily down for scheduled maintenance. Please try again later."
       }
       cta={{
-        to: "https://www.shelf.nu/blog-categories/updates-maintenance",
+        to: "https://your-domain.com/status", // Update to your status page or remove cta
         text: "Learn more",
       }}
       icon="tool"
@@ -290,7 +290,6 @@ function App() {
     </AnimationProvider>
   );
 }
-
 export default App;
 
 export const ErrorBoundary = () => <ErrorContent />;
